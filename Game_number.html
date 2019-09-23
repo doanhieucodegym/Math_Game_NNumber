@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game_number</title>
+</head>
+<body>
+output:<div id="output"></div>
+
+<script>
+    function Game_Number() {
+        let numberRandom = Math.floor(Math.random() *101);
+        document.getElementById("output");
+        console.log(numberRandom);
+        let n = 1;
+        while(n<=5){
+            n++;
+            let numberNhap = Number(prompt("Nhập số  bạn  đoán bạn đoán 5 lần "));
+            if(numberNhap >numberRandom){
+                alert(" số bạn đoán lớn hơn số cần tìm")
+            }else  if(numberNhap < numberRandom){
+                alert("số bạn đoán nhỏ  hơn số  cần tìm   ")
+            }else if(numberNhap === numberNhap){
+                alert("bạn đoán đùng số cần  tìm ")
+            }
+        }
+    }
+    Game_Number();
+
+</script>
+</body>
+</html>
